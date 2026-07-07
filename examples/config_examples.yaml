@@ -1,0 +1,12 @@
+project:
+  name: Supply Chain Analytics
+  version: 0.1.0
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  reports: reports
+
+pipeline:
+  enable_logging: true
+  stop_on_error: true
