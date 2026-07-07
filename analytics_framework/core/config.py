@@ -20,7 +20,7 @@ class Config:
     def from_yaml(cls, path: str | Path) -> "Config":
         path = Path(path)
 
-        with open(path, "r", encoding="utf-8") as file:
+        with open(path, encoding="utf-8") as file:
             data = yaml.safe_load(file)
 
         return cls(data)
