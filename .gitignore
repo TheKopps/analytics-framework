@@ -39,3 +39,6 @@ examples/figures/
 
 # Generated example reports
 examples/reports/
+
+# Generated example exports
+examples/exports/
