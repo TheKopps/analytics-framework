@@ -36,3 +36,6 @@ examples/data/
 
 # Generated example figures
 examples/figures/
+
+# Generated example reports
+examples/reports/
