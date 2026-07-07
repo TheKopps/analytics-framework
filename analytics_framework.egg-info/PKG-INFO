@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: analytics-framework
+Version: 0.1.0
+Summary: Reusable analytics framework for BI, Data Science and Machine Learning projects.
+Author: Adrien Monteiro
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: openpyxl
+Requires-Dist: python-docx
+
+# analytics-framework
+A reusable Python framework for business analytics, data quality, reporting and visualization.
