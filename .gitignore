@@ -30,3 +30,6 @@ Thumbs.db
 *.log
 logs/
 examples/logs/
+
+# Generated example data
+examples/data/
