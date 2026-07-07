@@ -28,3 +28,9 @@ include-package-data = true
 
 [tool.setuptools.packages.find]
 include = ["analytics_framework*"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff"
+]
