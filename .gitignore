@@ -33,3 +33,6 @@ examples/logs/
 
 # Generated example data
 examples/data/
+
+# Generated example figures
+examples/figures/
