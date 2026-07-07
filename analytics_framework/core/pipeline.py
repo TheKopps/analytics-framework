@@ -38,18 +38,14 @@ class Pipeline:
         for index, step in enumerate(self.steps, start=1):
             step_start = time.perf_counter()
 
-            self.logger.info(
-                f"[{index}/{len(self.steps)}] Running step: {step.name}"
-            )
+            self.logger.info(f"[{index}/{len(self.steps)}] Running step: {step.name}")
 
             try:
                 self.context = step.execute(self.context)
 
             except Exception as error:
                 self.logger.error(f"[FAILED] Step failed: {step.name}")
-                self.logger.error(
-                    f"{type(error).__name__}: {error}"
-                )
+                self.logger.error(f"{type(error).__name__}: {error}")
 
                 if self.stop_on_error:
                     raise StepExecutionError(step.name, error) from error
@@ -64,9 +60,7 @@ class Pipeline:
         pipeline_duration = round(time.perf_counter() - pipeline_start, 2)
 
         self.logger.info("=" * 60)
-        self.logger.info(
-            f"Pipeline completed successfully in {pipeline_duration}s."
-        )
+        self.logger.info(f"Pipeline completed successfully in {pipeline_duration}s.")
         self.logger.info("=" * 60)
 
         return self.context
