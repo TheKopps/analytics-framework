@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Package/build
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+env/
+.env
+
+# Tests / cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+examples/logs/
+
+# Generated example data
+examples/data/
+
+# Generated example figures
+examples/figures/
+
+# Generated example reports
+examples/reports/
+
+# Generated example exports
+examples/exports/
